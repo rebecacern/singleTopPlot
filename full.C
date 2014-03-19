@@ -173,8 +173,8 @@ void full(){
   double tch_7TeVerror[1] = {6.1};
   double tch_7TeVx[1] = {7};
  
-  double tch_8TeV[1] = {80.1};
-  double tch_8TeVerror[1] = {13.0};
+  double tch_8TeV[1] = {83.6};
+  double tch_8TeVerror[1] = {7.75};
   double tch_8TeVx[1] = {8};
   
   double tch_8TeV_comb[1] = {85};
@@ -283,21 +283,21 @@ void full(){
   mg->GetYaxis()->SetTitle("#sigma [pb]");
   //mg->GetYaxis()->CenterTitle();
   
-  TLegend * leg = new TLegend(0.46,0.15,0.86,0.45);
+  TLegend * leg = new TLegend(0.40,0.15,0.86,0.45);
   leg ->SetFillStyle(1001);
   leg ->SetFillColor(kWhite);
   leg ->SetTextSize(0.028);
   leg ->SetTextFont(42);
   leg ->SetBorderSize(0);
-  leg->AddEntry(gr, "NNLO Kidonakis PRD 83, 091503 (2011)", "cfl");
+  leg->AddEntry(gr, "Approx. NNLO Kidonakis, PRD 83, 091503 (2011)", "cfl");
   leg->AddEntry(gr_tch_7TeV, "CMS, JHEP12(2012) 035", "p");
-  leg->AddEntry(gr_tch_8TeV, "CMS, PAS-TOP-12-011", "p");
-  leg->AddEntry(grtw, "NNLO Kidonakis PRD 82, 054018 (2010)", "cfl");
+  leg->AddEntry(gr_tch_8TeV, "CMS, to be sub. to JHEP", "p");
+  leg->AddEntry(grtw, "Approx. NNLO Kidonakis, PRD 82, 054018 (2010)", "cfl");
   leg->AddEntry(gr_tw_7TeV, "CMS, Phys.Rev.Lett 110, 022003 (2013)", "p");
   leg->AddEntry(gr_tw_8TeV, "CMS, PAS-TOP-12-040", "p");
-  leg->AddEntry(grsch, "NNLO Kidonakis PRD 81, 054028 (2010)", "cfl");
+  leg->AddEntry(grsch, "Approx. NNLO Kidonakis, PRD 81, 054028 (2010)", "cfl");
   //  leg->AddEntry(gr_sch_7TeV, "CMS, Phys.Rev.Lett 110, 022003 (2013)", "p");
-  leg->AddEntry(gr_sch_8TeV, "CMS, PAS-TOP-13-009", "p");
+  leg->AddEntry(gr_sch_8TeV, "CMS, PAS-TOP-13-009 (FC interval)", "p");
   leg->Draw();
   labelcms->Draw();
   labelsingle->Draw();
@@ -309,7 +309,7 @@ void full(){
   mg->GetXaxis()->SetTitleOffset(1.1); 
   mg->GetYaxis()->SetLabelSize(0.04); 
   c1->Update();
-  c1->SaveAs("plots/singletopDec6.png");
-  c1->SaveAs("plots/singletopDec6.pdf");
-  c1->SaveAs("plots/singletopDec6.eps");
+  c1->SaveAs("plots/singletopMar13.png");
+  c1->SaveAs("plots/singletopMar13.pdf");
+  c1->SaveAs("plots/singletopMar13.eps");
 }
