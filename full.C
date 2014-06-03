@@ -291,10 +291,10 @@ void full(){
   leg ->SetBorderSize(0);
   leg->AddEntry(gr, "Approx. NNLO Kidonakis, PRD 83, 091503 (2011)", "cfl");
   leg->AddEntry(gr_tch_7TeV, "CMS, JHEP12(2012) 035", "p");
-  leg->AddEntry(gr_tch_8TeV, "CMS, sub. to JHEP", "p");
+  leg->AddEntry(gr_tch_8TeV, "CMS, accepted JHEP", "p");
   leg->AddEntry(grtw, "Approx. NNLO Kidonakis, PRD 82, 054018 (2010)", "cfl");
   leg->AddEntry(gr_tw_7TeV, "CMS, Phys.Rev.Lett 110, 022003 (2013)", "p");
-  leg->AddEntry(gr_tw_8TeV, "CMS, PAS-TOP-12-040", "p");
+  leg->AddEntry(gr_tw_8TeV, "CMS, accepeted Phys.Rev.Lett", "p");
   leg->AddEntry(grsch, "Approx. NNLO Kidonakis, PRD 81, 054028 (2010)", "cfl");
   //  leg->AddEntry(gr_sch_7TeV, "CMS, Phys.Rev.Lett 110, 022003 (2013)", "p");
   leg->AddEntry(gr_sch_8TeV, "CMS, PAS-TOP-13-009 (FC interval)", "p");
@@ -309,7 +309,7 @@ void full(){
   mg->GetXaxis()->SetTitleOffset(1.1); 
   mg->GetYaxis()->SetLabelSize(0.04); 
   c1->Update();
-  c1->SaveAs("plots/singletopMar31.png");
-  c1->SaveAs("plots/singletopMar31.pdf");
-  c1->SaveAs("plots/singletopMar31.eps");
+  c1->SaveAs("plots/singletopJune3.png");
+  c1->SaveAs("plots/singletopJune3.pdf");
+  c1->SaveAs("plots/singletopJune3.eps");
 }
